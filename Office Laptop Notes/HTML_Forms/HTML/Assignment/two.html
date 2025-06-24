@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Please Enter your Details</h1>
+
+    <form method="get" action="success.html" target="_blank">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="FirstName">First Name:</label>
+        <input type="text" id="FirstName" name="FirstName" placeholder="John"/>
+        <br/>
+
+        <label for="LastName">Last Name:</label>
+        <input type="text" id="LastName" name="LastName" placeholder="Doe" />
+        <br/>
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" placeholder="john.doe@gmail.com" />
+        <br/>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="25" />
+        <br/>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Interests</legend>
+
+        <input type="checkbox" id="music" name="interests" value="Music"/>
+        <label for="music">Music</label>
+        &nbsp;
+
+        <input type="checkbox" id="sports" name="interests" value="Sports"/>
+        <label for="sports">Sports</label>
+        &nbsp;
+        
+        <input type="checkbox" id="reading" name="interests" value="Reading"/>
+        <label for="reading">Reading</label>
+        &nbsp;
+    </fieldset>
+
+    <fieldset>
+        <legend>Aditional Information</legend>
+
+        <label for="Comments">Comments:</label>
+        <textarea rows="10" cols="40" name="comments" id="comments" ></textarea>
+        <br/>
+
+        <label for="profilepicture">Profile Picture:</label>
+        <input type="file" id="profilepicture" name="profilepicture" accept="image/*" capture="environment" />
+    </fieldset>
+
+        <fieldset>
+        <legend>Submit Options</legend>
+            
+            <label for="SubmissionMethod">Submission Method:</label> 
+
+            <input type="radio" id="online" name="SubmissionMethod" value="online" checked />
+            <label for="online">Online</label>
+            &nbsp;
+
+            <input type="radio" id="offline" name="SubmissionMethod" value="offline"  />
+            <label for="offline">Offline</label>
+            <br/>
+
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="Yes" checked />
+
+        </fieldset>
+
+        <input type="submit"/>
+        <input type="reset"/>
+
+    </form>
+    
+</body>
+</html>
